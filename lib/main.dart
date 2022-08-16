@@ -5,9 +5,9 @@ import 'package:trial/Pages/WelcomePage.dart';
 
 void main() {
   runApp(const MaterialApp(
-    // home:SignUp()
+    home:SignUp()
     // home: Welcome(),
-    home:ForgotPassword()
+    // home:ForgotPassword()
   ));
 }
 

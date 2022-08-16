@@ -21,9 +21,8 @@ class _SignUpState extends State<SignUp> {
         children: 
           [Column(crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-            SizedBox(
-              height:30,
-            ),
+              SizedBox(height: 5,),
+            
             Padding(
               padding: const EdgeInsets.only(left:18.0),
               child: Text("Getting Started",
