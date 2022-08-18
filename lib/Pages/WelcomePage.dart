@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:trial/Pages/Functions.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({Key? key}) : super(key: key);
@@ -10,6 +12,8 @@ class Welcome extends StatefulWidget {
 }
 
 class _WelcomeState extends State<Welcome> {
+  // var Emma = new Abena();
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -52,10 +56,7 @@ class _WelcomeState extends State<Welcome> {
                             decoration: BoxDecoration(
                               borderRadius:BorderRadius.circular(14),
                               border: Border.all(color:Colors.grey
-                            ))
-                      
-                          
-                            ,
+                            )),
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Column(
@@ -116,11 +117,17 @@ class _WelcomeState extends State<Welcome> {
                           ),
                         ),
                          Padding(
-                          padding: const EdgeInsets.only(top:28.0),
+                          padding: const EdgeInsets.only(top:30.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Remember "),
+                              Row(
+                                children: [
+                                  IconButton(onPressed: (){}, icon: Icon(Icons.check_box_outline_blank)),
+                                  Text("Remember "),
+                                ],
+                              ),
+                              
                               Text("Forgot Password")
                               // Checkbox(value: true, onChanged: (bool? value){})
                             ],
@@ -214,11 +221,21 @@ class _WelcomeState extends State<Welcome> {
                        icon: Icon(Icons.arrow_forward_rounded))
                   ],),
                     ),
+                    // Emma.Trigger("Hello Abena"),
+                    // Emma.H1("Hello"),
+
+
+                    // H1.Header("Hello!!!"),
+                    
+
+                    
         
             ]),
           ],
         ),
+        
       ),
     );
   }
 }
+

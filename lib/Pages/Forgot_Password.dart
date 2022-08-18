@@ -49,16 +49,14 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 Column(crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                    Padding(
-                            padding: const EdgeInsets.only(top:8.0),
+                            padding: const EdgeInsets.only(top:42.0),
                             child: Container(
                               // height: 100,
                               decoration: BoxDecoration(
                                 borderRadius:BorderRadius.circular(14),
                                 border: Border.all(color:Colors.grey
-                              ))
-                        
-                            
-                              ,
+                              )),
+                              
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Column(
@@ -119,7 +117,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                               ),
                             ),),
                             Padding(
-                            padding: const EdgeInsets.only(top:30.0),
+                            padding: const EdgeInsets.only(top:62.0),
                             child: ElevatedButton(
                               style:ButtonStyle(
                               backgroundColor: MaterialStateProperty.all(Colors.black),

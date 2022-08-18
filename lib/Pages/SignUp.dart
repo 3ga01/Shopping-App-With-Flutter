@@ -3,6 +3,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:trial/Pages/promise.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
@@ -150,7 +151,10 @@ class _SignUpState extends State<SignUp> {
                       style:ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(Colors.black),
                     ),
-                      onPressed: (){}, child: 
+                      onPressed: (){
+                                                Navigator.push(context, MaterialPageRoute(builder: (context) => Promise()));
+
+                      }, child: 
                     Padding(
                       padding: const EdgeInsets.all(18.0),
                       child: Text("Sign Up",style: TextStyle(
@@ -197,7 +201,8 @@ class _SignUpState extends State<SignUp> {
                          )),
                         backgroundColor: MaterialStateProperty.all(Colors.white)
                       ),
-                      onPressed: (){},
+                      onPressed: (){
+                      },
                       child:Row(
                         children: [Icon(color:Colors.blue,
                         Icons.facebook_outlined,),
